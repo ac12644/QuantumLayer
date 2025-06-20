@@ -75,6 +75,8 @@ QuantumLayer is a next-generation, post-quantum secure blockchain protocol desig
 17. [Conclusion](#17-conclusion)
 18. [References](#18-references)
 
+
+
 ## 1. Abstract
 
 QuantumLayer is a next-generation, post-quantum secure Layer 1 blockchain protocol architected to withstand both classical and quantum adversaries. Built upon a custom fork of the Cosmos SDK and Tendermint consensus engine, QuantumLayer exclusively utilizes CRYSTALS-Dilithium digital signatures for all transactions, validator messages, and account authentication—establishing a new global standard for cryptographic resilience.
@@ -83,9 +85,13 @@ The protocol features a highly modular architecture: a Byzantine Fault Tolerant 
 
 This paper presents a formal description of QuantumLayer’s system model, consensus protocol, cryptographic primitives, tokenomics, and security guarantees. We analyze network performance, threat models, economic incentives, and demonstrate that QuantumLayer achieves provable safety, liveness, and post-quantum security under standard cryptographic assumptions. By providing a secure, developer-friendly foundation for the quantum era, QuantumLayer aims to be the trusted backbone for the next evolution of Web3.
 
+
+
 ## Disclaimer
 
 This document is for research and informational purposes only. It does not constitute legal, investment, or financial advice. Protocol parameters, designs, and claims are subject to change. Use at your own risk.
+
+
 
 ## 2. Introduction
 
@@ -134,6 +140,8 @@ The remainder of this document is organized as follows:
 - **Section 16** details ecosystem use cases and community incentives.
 - **Section 17** concludes.
 - **Section 18** lists references and formal definitions.
+
+
 
 ## 3. Background
 
@@ -502,6 +510,7 @@ Each block height proceeds in a series of rounds. Each round consists of:
 #### 6.3.2 Pseudocode
 
 ```pseudocode
+
 for each block height h:
     r ← 0
     while not committed:
@@ -525,6 +534,7 @@ for each block height h:
             break
         else:
             r ← r + 1
+            
 ```
 
 ### 6.4 Proposer Selection
